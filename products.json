@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hoodie-ash",
+    "title_en": "Essentials Oversized Hoodie - Ash Grey",
+    "title_bs": "Essentials Oversized Hoodie - Siva",
+    "price": 69,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "assets/hoodie.jpg",
+    "short_en": "Premium oversized hoodie. Sizes S–XL.",
+    "short_bs": "Premium oversized hoodie. Veličine S–XL.",
+    "yupoo": "https://deateath.x.yupoo.com/item1"
+  },
+  {
+    "id": "tee-white",
+    "title_en": "StreetMode Tee - White",
+    "title_bs": "StreetMode Majica - Bijela",
+    "price": 29,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "assets/tee.jpg",
+    "short_en": "Classic cotton tee.",
+    "short_bs": "Klasična majica od pamuka.",
+    "yupoo": "https://deateath.x.yupoo.com/item2"
+  },
+  {
+    "id": "sneaker-black",
+    "title_en": "Core Sneaker - Black",
+    "title_bs": "Core Patika - Crna",
+    "price": 129,
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "image": "assets/sneaker.jpg",
+    "short_en": "Comfort & style sneaker.",
+    "short_bs": "Udobna i moderna patika.",
+    "yupoo": "https://deateath.x.yupoo.com/item3"
+  },
+  {
+    "id": "demo-jacket",
+    "title_en": "Demo Bomber Jacket",
+    "title_bs": "Demo Bomber Jakna",
+    "price": 85,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "assets/jacket.jpg",
+    "short_en": "Lightweight bomber jacket.",
+    "short_bs": "Lagana bomber jakna.",
+    "yupoo": "https://deateath.x.yupoo.com/demo1"
+  },
+  {
+    "id": "demo-beanie",
+    "title_en": "Demo Beanie",
+    "title_bs": "Demo Kapa",
+    "price": 15,
+    "sizes": [
+      "One size"
+    ],
+    "image": "assets/beanie.jpg",
+    "short_en": "Cozy winter beanie.",
+    "short_bs": "Topla kapa za zimu.",
+    "yupoo": "https://deateath.x.yupoo.com/demo2"
+  },
+  {
+    "id": "demo-bag",
+    "title_en": "Demo Crossbody Bag",
+    "title_bs": "Demo Torba preko ramena",
+    "price": 49,
+    "sizes": [
+      "One size"
+    ],
+    "image": "assets/bag.jpg",
+    "short_en": "Compact crossbody bag.",
+    "short_bs": "Kompaktna torba preko ramena.",
+    "yupoo": "https://deateath.x.yupoo.com/demo3"
+  }
+]

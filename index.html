@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StreetMode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><strong>STREETMODE</strong></div>
+      <nav class="nav">
+        <button id="langBtn" class="btn small">EN / BS</button>
+        <a href="#shop" class="btn">Shop / Prodavnica</a>
+        <a href="#contact" class="btn">Contact / Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="home" class="home">
+      <h1 data-i18n="heroTitle">Streetwear kolekcije — direktno iz izvora</h1>
+      <p data-i18n="heroSubtitle">Dostava širom BiH. Brzo, pouzdano, stylish.</p>
+    </section>
+
+    <section id="shop" class="shop">
+      <h2 data-i18n="shopTitle">Shop / Prodavnica</h2>
+      <div id="products" class="products"></div>
+    </section>
+
+    <aside class="cart" id="cartPanel">
+      <h3 data-i18n="cartTitle">Tvoja korpa</h3>
+      <div id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">0 KM</div>
+      <button id="checkoutBtn" class="btn primary" data-i18n="checkout">Checkout / Kupi</button>
+    </aside>
+
+    <section id="contact" class="contact">
+      <h2 data-i18n="contactTitle">Contact / Kontakt</h2>
+      <form id="orderForm" class="order-form">
+        <input name="name" placeholder="Ime i prezime" required />
+        <input name="phone" placeholder="Telefon" required />
+        <input name="address" placeholder="Adresa za dostavu" required />
+        <textarea name="notes" placeholder="Napomene (veličina, boja)"></textarea>
+        <button type="submit" class="btn primary" data-i18n="placeOrder">Potvrdi narudžbu</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>© STREETMODE — <span id="year"></span></div>
+    </footer>
+  </main>
+
+  <div id="modal" class="modal hidden"></div>
+
+  <script src="products.json" type="application/json" id="productsData"></script>
+  <script src="app.js"></script>
+</body>
+</html>
