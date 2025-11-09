@@ -3,50 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StreetMode Shop</title>
+  <title>StreetMode – Luxury Streetwear</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>STREETMODE</h1>
-    <p>Urban Style | Authentic Streetwear</p>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    WORLDWIDE SHIPPING · PREMIUM REPLICA STREETWEAR
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo-wrap">
+        <img src="assets/streetmode-logo.png" alt="StreetMode logo" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle">
+        ☰
+      </button>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>New Collection</h2>
-    <p>Explore the latest street fashion trends.</p>
-    <a href="#products" class="cta-btn">Shop Now</a>
+  <!-- MOBILE NAV -->
+  <nav class="nav-links-mobile" id="mobileNav">
+    <a href="#shop">Shop</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">STREETMODE / DROP SERVICE</p>
+        <h1>Luxury streetwear, curated for you.</h1>
+        <p class="hero-sub">
+          Premium pieces direktno od dobavljača. Plaćaš manje, nosiš kao da je butik.
+        </p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn primary">Shop collection</a>
+          <a href="#how-it-works" class="btn ghost">How StreetMode works</a>
+        </div>
+        <p class="hero-note">
+          Sva roba ide direktno od partnera do tebe – mi radimo nabavku i kontrolu.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <p class="hero-card-title">Today’s highlight</p>
+        <p class="hero-card-name">Tech Fleece · Essentials · Sneaks</p>
+        <p class="hero-card-text">
+          Pogledaj kompletan katalog i pošalji nam model koji želiš. Mi radimo ostalo.
+        </p>
+        <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="btn full">
+          View full Yupoo catalog
+        </a>
+      </div>
+    </div>
   </section>
 
-  <main id="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x350" alt="Hoodie" />
-      <h3>StreetMode Hoodie</h3>
-      <p>€75</p>
-      <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="buy-btn">View on Yupoo</a>
-    </div>
+  <!-- SHOP SECTION -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured pieces</h2>
+        <p>Primjeri artikala – klik vodi na tvoj dobavljač katalog.</p>
+      </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x350" alt="Sneakers" />
-      <h3>Classic Sneakers</h3>
-      <p>€90</p>
-      <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="buy-btn">View on Yupoo</a>
-    </div>
+      <div class="product-grid">
+        <!-- PRODUCT 1 -->
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">SETS</span>
+            <img src="https://via.placeholder.com/600x700?text=Tech+Fleece+Set" alt="Tech fleece set" />
+          </div>
+          <div class="product-body">
+            <h3>Tech Fleece Tracksuit</h3>
+            <p class="product-meta">Sizes: S–XL · Multiple colors</p>
+            <p class="product-price">From €80</p>
+            <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="btn full">
+              View on catalog
+            </a>
+          </div>
+        </article>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x350" alt="Jacket" />
-      <h3>Oversized Jacket</h3>
-      <p>€110</p>
-      <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="buy-btn">View on Yupoo</a>
-    </div>
-  </main>
+        <!-- PRODUCT 2 -->
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">SNEAKERS</span>
+            <img src="https://via.placeholder.com/600x700?text=Luxury+Sneakers" alt="Sneakers" />
+          </div>
+          <div class="product-body">
+            <h3>Luxury Runner Sneaker</h3>
+            <p class="product-meta">EU 40–45 · Multiple models</p>
+            <p class="product-price">From €120</p>
+            <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="btn full">
+              View on catalog
+            </a>
+          </div>
+        </article>
 
-  <footer>
-    <p>© 2025 StreetMode. All rights reserved.</p>
-    <p>Follow us on 
-      <a href="https://instagram.com" target="_blank">Instagram</a> & 
-      <a href="https://tiktok.com" target="_blank">TikTok</a>
-    </p>
+        <!-- PRODUCT 3 -->
+        <article class="product-card">
+          <div class="product-image">
+            <span class="tag">HOODIES</span>
+            <img src="https://via.placeholder.com/600x700?text=Oversized+Hoodie" alt="Hoodie" />
+          </div>
+          <div class="product-body">
+            <h3>Oversized Essential Hoodie</h3>
+            <p class="product-meta">Unisex · S–XL</p>
+            <p class="product-price">From €60</p>
+            <a href="https://deateath.x.yupoo.com/categories/4571156" target="_blank" class="btn full">
+              View on catalog
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How StreetMode works</h2>
+        <p>Transparentan proces, od odabira do isporuke.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <h3>1. Odaberi model</h3>
+          <p>
+            Uđeš na naš katalog (Yupoo) i pošalješ nam screenshot/ime modela na Instagram ili preko forme.
+          </p>
+        </div>
+        <div class="step">
+          <h3>2. Potvrda & uplata</h3>
+          <p>
+            Potvrđujemo dostupnost, veličinu i cijenu. Plaćaš unaprijed (Revolut / bank transfer / PayPal).
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Mi naručujemo za tebe</h3>
+          <p>
+            Radimo narudžbu kod provjerenog dobavljača, kontrolišemo slike i šaljemo paket na tvoju adresu.
+          </p>
+        </div>
+        <div class="step">
+          <h3>4. Dostava & tracking</h3>
+          <p>
+            Dobijaš tracking, pratiš paket i preuzimaš. Bez priče, samo kvalitetna roba.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="section-header">
+          <h2>Contact & Orders</h2>
+          <p>Piši nam za bilo koji model iz kataloga.</p>
+        </div>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> streetmodeshop6@gmail.com</li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@streetmode</a></li>
+          <li><strong>TikTok:</strong> <a href="https://tiktok.com" target="_blank">@streetmode</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="mailto:streetmodeshop6@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Ime i prezime" required />
+        <input type="text" name="ig" placeholder="Instagram username" />
+        <textarea name="message" rows="4" placeholder="Link ili opis modela koji želiš" required></textarea>
+        <button type="submit" class="btn full">Pošalji upit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 STREETMODE. All rights reserved.</p>
+      <p class="footer-note">Independent drop service · Not affiliated with original brands.</p>
+    </div>
   </footer>
+
+  <script>
+    // simple mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
