@@ -1,4 +1,4 @@
-/* RESET & BASE */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -9,35 +9,35 @@
 
 :root {
   --bg: #050505;
-  --bg-alt: #0c0c0c;
-  --card: #111;
-  --border: #222;
-  --text: #f5f5f5;
-  --muted: #9a9a9a;
+  --bg-alt: #0d0d0d;
+  --card: #111111;
+  --border: #222222;
+  --text: #f7f7f7;
+  --muted: #a2a2a2;
   --accent: #ffffff;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-  background: var(--bg);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #151515 0, #050505 55%, #000 100%);
   color: var(--text);
 }
 
-/* LAYOUT */
+/* GENERAL LAYOUT */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 18px;
 }
 
 /* TOP BAR */
 .top-bar {
   text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.12em;
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-bottom: 1px solid var(--border);
   color: var(--muted);
 }
@@ -46,9 +46,9 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: rgba(5, 5, 5, 0.96);
-  backdrop-filter: blur(10px);
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background: rgba(5, 5, 5, 0.94);
   border-bottom: 1px solid var(--border);
 }
 
@@ -67,10 +67,10 @@ body {
 /* NAV */
 .nav-links {
   display: flex;
-  gap: 20px;
-  font-size: 14px;
+  gap: 22px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.22em;
 }
 
 .nav-links a {
@@ -85,11 +85,11 @@ body {
 
 .nav-toggle {
   display: none;
-  background: none;
-  border: 1px solid var(--border);
   border-radius: 999px;
+  border: 1px solid var(--border);
+  background: none;
   color: var(--text);
-  padding: 4px 10px;
+  padding: 4px 12px;
   font-size: 18px;
 }
 
@@ -97,18 +97,18 @@ body {
 .nav-links-mobile {
   display: none;
   flex-direction: column;
-  gap: 12px;
-  padding: 10px 16px 16px;
+  gap: 10px;
+  padding: 10px 18px 14px;
   border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: #050505;
 }
 
 .nav-links-mobile a {
   color: var(--muted);
+  font-size: 12px;
   text-decoration: none;
-  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
 }
 
 .nav-links-mobile.open {
@@ -117,34 +117,35 @@ body {
 
 /* HERO */
 .hero {
-  padding: 48px 0 40px;
+  padding: 46px 0 40px;
   border-bottom: 1px solid var(--border);
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr);
-  gap: 36px;
-}
-
-.hero-text h1 {
-  font-size: clamp(32px, 5vw, 44px);
-  line-height: 1.05;
-  margin-bottom: 14px;
-}
-
-.hero-sub {
-  color: var(--muted);
-  max-width: 440px;
-  margin-bottom: 18px;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.1fr);
+  gap: 40px;
 }
 
 .eyebrow {
-  font-size: 12px;
+  font-size: 11px;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
-  letter-spacing: 0.24em;
   color: var(--muted);
   margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: clamp(32px, 4.6vw, 44px);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.hero-sub {
+  max-width: 460px;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
 .hero-actions {
@@ -161,28 +162,38 @@ body {
 
 /* HERO CARD */
 .hero-card {
-  border-radius: 18px;
+  border-radius: 22px;
   border: 1px solid var(--border);
-  padding: 20px;
-  background: radial-gradient(circle at top left, #1f1f1f, #050505);
+  background: radial-gradient(circle at top left, #222 0, #050505 55%, #000 100%);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .hero-card-title {
-  font-size: 12px;
+  font-size: 11px;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
   color: var(--muted);
 }
 
 .hero-card-name {
-  margin-top: 10px;
-  font-size: 16px;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .hero-card-text {
-  margin: 10px 0 18px;
   font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 11px;
   color: var(--muted);
 }
 
@@ -193,15 +204,15 @@ body {
   justify-content: center;
   border-radius: 999px;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
   border: 1px solid var(--border);
   color: var(--text);
-  text-decoration: none;
   background: transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  text-decoration: none;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
 }
 
 .btn.primary {
@@ -211,16 +222,20 @@ body {
 }
 
 .btn.primary:hover {
-  background: #dcdcdc;
+  background: #e2e2e2;
 }
 
 .btn.ghost:hover {
-  border-color: var(--accent);
   color: var(--accent);
+  border-color: var(--accent);
 }
 
 .btn.full {
   width: 100%;
+}
+
+.btn:active {
+  transform: translateY(1px);
 }
 
 /* SECTIONS */
@@ -238,15 +253,33 @@ body {
 }
 
 .section-header h2 {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.26em;
 }
 
 .section-header p {
-  color: var(--muted);
   font-size: 14px;
+  color: var(--muted);
   margin-top: 6px;
+}
+
+/* COLLECTION PILLS */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pill {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 /* PRODUCTS */
@@ -258,9 +291,9 @@ body {
 
 .product-card {
   background: var(--card);
-  border-radius: 18px;
-  overflow: hidden;
+  border-radius: 20px;
   border: 1px solid var(--border);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -271,10 +304,10 @@ body {
 }
 
 .product-image img {
-  width: 100%;
   display: block;
+  width: 100%;
   object-fit: cover;
-  transition: transform 0.4s;
+  transition: transform 0.35s;
 }
 
 .product-card:hover .product-image img {
@@ -285,12 +318,12 @@ body {
   position: absolute;
   top: 12px;
   left: 12px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  background: rgba(0, 0, 0, 0.7);
   padding: 4px 10px;
   border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .product-body {
@@ -298,7 +331,7 @@ body {
 }
 
 .product-body h3 {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 4px;
 }
 
@@ -313,7 +346,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* STEPS */
+/* HOW IT WORKS */
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -321,17 +354,19 @@ body {
 }
 
 .step {
-  background: #101010;
-  border-radius: 14px;
-  padding: 16px 14px;
+  background: #111;
+  border-radius: 16px;
   border: 1px solid var(--border);
-  font-size: 14px;
+  padding: 14px 14px 18px;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .step h3 {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.22em;
+  color: var(--text);
   margin-bottom: 8px;
 }
 
@@ -359,7 +394,7 @@ body {
 
 .contact-form {
   background: var(--card);
-  border-radius: 16px;
+  border-radius: 18px;
   border: 1px solid var(--border);
   padding: 16px;
   display: grid;
@@ -369,7 +404,7 @@ body {
 .contact-form input,
 .contact-form textarea {
   background: #050505;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid var(--border);
   padding: 10px;
   color: var(--text);
@@ -383,7 +418,7 @@ body {
 
 /* FOOTER */
 .site-footer {
-  padding: 20px 0 26px;
+  padding: 22px 0 26px;
 }
 
 .footer-inner {
@@ -397,10 +432,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 800px) {
-  .header-inner {
-    gap: 12px;
-  }
+@media (max-width: 880px) {
   .nav-links {
     display: none;
   }
@@ -415,9 +447,6 @@ body {
   }
   .section {
     padding: 32px 0;
-  }
-  main {
-    padding-inline: 16px;
   }
   .contact-grid {
     grid-template-columns: 1fr;
